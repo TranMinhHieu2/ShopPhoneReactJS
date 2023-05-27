@@ -1,0 +1,98 @@
+.wrapper {
+    --search-border-radius: 92px;
+    --search-but-width: 52px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: var(--white);
+    width: 100%;
+    height: var(--default-layout-header-height);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    display: flex;
+    justify-content: center;
+}
+.inner {
+    height: 100%;
+    width: var(--default-layout-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo > img {
+    margin-top: 10px;
+    max-width: 240px;
+}
+
+.search,
+.search-result {
+    width: 361px;
+}
+.search {
+    position: relative;
+    height: 46px;
+    padding-left: 16px;
+    display: flex;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: var(--search-border-radius);
+    border: 1.5px solid transparent;
+
+    input {
+        flex: 1;
+        height: 100%;
+        color: var(--black);
+        font-size: 1.6rem;
+        background-color: transparent;
+    }
+    // !!!!!
+    input:not(:placeholder-shown) ~ .search-but {
+        color: rgba(22, 24, 35, 0.75);
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 9px;
+        right: var(--search-but-width);
+        width: 1px;
+        height: 28px;
+        background-color: rgba(22, 24, 35, 0.12);
+    }
+
+    &:focus-within {
+        border-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.clear,
+.loading {
+    position: absolute;
+    right: calc(var(--search-but-width) + 16px);
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(22, 24, 35, 0.34);
+}
+.search-but {
+    width: var(--search-but-width);
+    height: 100%;
+    border-top-right-radius: var(--search-border-radius);
+    border-bottom-right-radius: var(--search-border-radius);
+    font-size: 2rem;
+    color: rgba(22, 24, 35, 0.34);
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+
+.more-btn {
+    font-size: 2rem;
+    margin-left: 28px;
+    background-color: transparent;
+}

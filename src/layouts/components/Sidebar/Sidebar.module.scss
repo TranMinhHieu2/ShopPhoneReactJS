@@ -1,0 +1,29 @@
+.wrapper {
+    width: 290px;
+    padding: 20px 0 26px 8px;
+    margin-left: 36px;
+    //
+    position: fixed;
+    background-color: var(--white);
+    z-index: 10;
+    margin-top: 1px;
+}
+.CategoryItem {
+    display: flex;
+    padding: 10px;
+    position: relative;
+
+    & > h3 {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        color: var(--primary);
+    }
+}
+.f-h {
+}
+
+.f-p {
+    font-weight: 300;
+}

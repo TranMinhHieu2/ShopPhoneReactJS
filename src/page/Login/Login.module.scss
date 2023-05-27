@@ -1,0 +1,66 @@
+.wrapper {
+    height: 653px;
+    background-image: linear-gradient(to bottom left, #ff9db0, var(--primary));
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 180px 0;
+    background-color: var(--white);
+    width: 300px;
+    border-radius: 4px;
+}
+.header {
+    padding: 36px 10px;
+}
+.ip-item {
+    padding: 6px;
+    width: 260px;
+
+    .i-ip {
+        width: 100%;
+        font-size: 15px;
+        padding: 8px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+.forgot {
+    font-size: 12px;
+    margin-left: 160px;
+}
+.but {
+    margin: 20px 8px 8px 10px;
+    padding: 10px 0;
+    width: 90%;
+    border-radius: 19px;
+    color: var(--white);
+    background-color: var(--primary);
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    }
+}
+.but-signup {
+    margin: 20px 8px 8px 10px;
+    padding: 10px 0;
+    width: 270px;
+    border-radius: 19px;
+    color: #ccc;
+    background-color: var(--white);
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--primary);
+        color: var(--white);
+    }
+}

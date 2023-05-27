@@ -1,0 +1,114 @@
+// .slick-prev {
+//     left: -10 !important;
+//     z-index: 1000 !important;
+//     height: 48px !important;
+//     width: 44px !important;
+//     background: #fff !important;
+//     border: 2px solid #d7d7d7 !important;
+//     &:hover {
+//         background: #eceaea !important ;
+//     }
+// }
+
+// .slick-prev::before,
+// .slick-next::before {
+//     font-family: FontAweSome !important;
+//     color: red !important;
+//     //   content: "\f060" !important; //unicode
+// }
+
+// .slick-next {
+//     right: -10 !important;
+//     z-index: 1000 !important;
+//     height: 48px !important;
+//     width: 44px !important;
+//     background: #fff !important;
+//     border: 2px solid #d7d7d7 !important;
+//     &:hover {
+//         background: #eceaea !important ;
+//     }
+// }
+
+// slider
+.wrapper {
+    display: flex;
+}
+.slider {
+    width: 690px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.imgitem {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+// slider bottom
+.slider__bottom {
+    margin-top: -5px;
+    display: block;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    height: 72px;
+    overflow: hidden;
+}
+.slider__bottom__list {
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.slider__bottom__item {
+    width: 140px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.1s;
+    flex: 1 0 20%;
+    position: relative;
+    transition: all ease 0.5s;
+}
+.slider__bottom__item:hover {
+    cursor: pointer;
+}
+.item--active {
+    background-color: #f3f4f6;
+}
+.slider__bottom__item__underline {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 0%;
+    height: 3%;
+    background-color: #c40016;
+    top: 97%;
+    transition: all ease 0.5s;
+}
+.dot--active {
+    left: 0%;
+    width: 100%;
+}
+.slider__bottom__item__link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+.slider__bottom__item__link__text__1st {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.slider__bottom__item__link__text__2nd {
+    font-size: 11px;
+}
+.img3 {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.slide__ads__wrapper {
+}
+.img3__item {
+    max-width: 277px;
+    border-radius: 10px;
+}
