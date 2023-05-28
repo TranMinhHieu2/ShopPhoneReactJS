@@ -1,6 +1,5 @@
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react/headless';
-
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import ProductPreview from './ProductPreview/ProductPreview';
 import styles from './SuggestedProduct.module.scss';

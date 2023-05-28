@@ -2,10 +2,8 @@
 import Menu, { MenuItem } from "./Menu";
 import config from '~/config';
 import { HomeIcon, CarttIcon, CategoryItem } from "~/components/Icons";
-
 import classNames from "classnames/bind";
 import styles from './Sidebar.module.scss';
-
 import SuggestedProduct from '~/components/SuggestedProduct';
 
 const cx = classNames.bind(styles);

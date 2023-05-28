@@ -1,6 +1,5 @@
 import images from "~/assets/img";
 
-
 const ProductArr = [
     {
         id: "1",
